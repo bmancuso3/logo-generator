@@ -1,0 +1,19 @@
+{
+  "name": "logo-generator",
+  "version": "1.0.0",
+  "description": "An app that generates a simple logo for your business, profile, or other needs!  UTA Bootcamp Challenge 10.",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
