@@ -26,17 +26,17 @@ const questions = [
     },
 ];
 
-// // Function to import generateMarkdown and run answers through it
-// function writeToFile(fileName, answers) {
-//     // console.log('writetofile', answers);
-//     const markdownContent = genMarkdown.generateMarkdown(answers);
-//     // console.log('markdown', markdownContent);
+// Function to import generateMarkdown and run answers through it
+function writeToFile(fileName, answers) {
+    // console.log('writetofile', answers);
+    const markdownContent = genMarkdown.generateMarkdown(answers);
+    // console.log('markdown', markdownContent);
 
-// // Writes markdowncontent to file and logs necessary result
-//     fs.writeFile(fileName, markdownContent, (err) =>
-//     err ? console.log(err) : console.log('Successfully generated genREADME.md!')
-//     );
-// };
+// Writes markdowncontent to file and logs necessary result
+    fs.writeFile(fileName, markdownContent, (err) =>
+    err ? console.log(err) : console.log('Successfully generated genREADME.md!')
+    );
+};
 
 // Function to initialize the questions for user
 function init() {

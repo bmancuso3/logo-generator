@@ -33,15 +33,15 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 1. JavaScript
 2. Node.js
 3. Inquirer
-4. SVG
+4. Jest
+5. SVG
 
 ## References
 1. UTA Bootcamp curriculum, instructor examples and student solved examples
-2. Creating a Table of Contents for an md file - <a href='https://stackoverflow.com/questions/18244417/how-do-i-create-some-kind-of-table-of-content-in-github-wiki'>Stack Overflow</a>
+2. Andres Miro - helped with class creation and property assignment
+2. Basic SVG shape components and theory - <a href='https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes'>mdn web docs</a>
 3. <a href='https://en.wikipedia.org/wiki/MIT_License'>MIT License</a>
-4. <a href='http://www.apache.org/licenses/LICENSE-2.0'>Apache 2.0 License</a>
-5. <a href='https://choosealicense.com/licenses/mpl-2.0/'>Mozilla License</a>
-6. <a href='https://www.gnu.org/licenses/gpl-3.0.txt'>GNU License</a>
+
 
 ## <a href="https://github.com/bmancuso3/logo-generator">GitHub Repository</a>
 
