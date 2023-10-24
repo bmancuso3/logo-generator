@@ -12,7 +12,7 @@ const questions = [
     {
         type: 'input',
         message: 'Enter a text color keyword or hexadecimal (ie blue or 0000FF):',
-        name: 'text-color',
+        name: 'textColor',
     },
     {
         type: 'list',
@@ -23,20 +23,43 @@ const questions = [
     {
         type: 'input',
         message: 'Please enter a shape color keyword or hexadecimal: ',
-        name: 'shape-color',
+        name: 'shapeColor',
     },
 ];
 
 // Function to import generateMarkdown and run answers through it
 function writeToFile(fileName, answers) {
-    // console.log('writetofile', answers);
-    const markdownContent = genMarkdown.generateMarkdown(answers);
-    // console.log('markdown', markdownContent);
+    console.log('writetofile', answers);
 
-// Writes markdowncontent to file and logs necessary result
-    fs.writeFile(fileName, markdownContent, (err) =>
-    err ? console.log(err) : console.log('Successfully generated genREADME.md!')
+    let shape;
+
+    if (answers.shape = 'Circle') {
+        console.log('circle', shape);
+        shape = new Circle();
+    }
+    else if (answers.shape = 'Square') {
+        console.log('square', shape);
+        shape = new Square();
+    }
+    else if (answers.shape = 'Triangle') {
+        console.log('triangle', shape);
+        shape = new Triangle();
+    }
+    else {
+        console.log('Invalid or unsupported shape! :(')
+    }
+
+    shape.setShapeColor(answers.shapeColor);
+    shape.setText(answers.text);
+    shape.setTextColor(answers.textColor);
+
+    console.log('shape assigned', JSON.stringify(shape));
+
+// Writes returned svg tag to file and logs ensuing result
+    fs.writeFile(fileName, shape, (err) =>
+    err ? console.log(err) : console.log('Successfully created gen-logo.svg!')
     );
+
 };
 
 // Function to initialize the questions for user
@@ -45,7 +68,7 @@ function init() {
         .prompt (questions)
         .then ((answers) => {
             console.log('init', answers);
-            // writeToFile('genREADME.md', answers);
+            writeToFile('gen-logo.svg', answers);
         });
 };
 
