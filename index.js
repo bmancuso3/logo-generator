@@ -53,10 +53,15 @@ function writeToFile(fileName, answers) {
     shape.setText(answers.text);
     shape.setTextColor(answers.textColor);
 
-    console.log('shape assigned', JSON.stringify(shape));
+    const svg = shape.render();
+    const filePath = `./examples`;
+    // const fileName = ''
+
+    console.log('svg string', svg);
 
 // Writes returned svg tag to file and logs ensuing result
-    fs.writeFile(fileName, shape, (err) =>
+    // fs.writeFile(fileName, JSON.stringify(shape), (err) =>
+    fs.writeFile(filePath, svg, (err) =>
     err ? console.log(err) : console.log('Successfully created gen-logo.svg!')
     );
 
