@@ -52,10 +52,10 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ## Logo Examples
 
 ### EX1
-<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="100" r="80" fill="red" /><text x="150" y="125" font-size="60" text-anchor="middle" fill="white">RPM</text></svg>
+<img src='./examples/gen-logo-EX1.svg' alt='EX1'/>
 
 ### EX2
-<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="20" width="200" height="200" fill="black" /><text x="125" y="125" font-size="60" text-anchor="middle" fill="red">lol</text></svg>
+<img src='./examples/gen-logo-EX2.svg' alt='EX2'/>
 
 ### EX3
-<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><polygon points="150,20 280,180 20,180" fill="blue" /><text x="150" y="150" font-size="60" text-anchor="middle" fill="white">RED</text></svg>
+<img src='./examples/gen-logo-EX3.svg' alt='EX3'/>
