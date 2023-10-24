@@ -17,7 +17,7 @@ const questions = [
     {
         type: 'list',
         message: 'Please choose a background shape:',
-        name: 'shape',
+        name: 'logoShape',
         choices: ['Circle', 'Square', 'Triangle'],
     },
     {
@@ -29,21 +29,21 @@ const questions = [
 
 // Function to import generateMarkdown and run answers through it
 function writeToFile(fileName, answers) {
-    console.log('writetofile', answers);
+    // console.log('writetofile', answers);
 
     let shape;
 
-    if (answers.shape = 'Circle') {
-        console.log('circle', shape);
+    if (answers.logoShape === 'Circle') {
         shape = new Circle();
+        // console.log('circle', shape);
     }
-    else if (answers.shape = 'Square') {
-        console.log('square', shape);
+    else if (answers.logoShape === 'Square') {
         shape = new Square();
+        // console.log('square', shape);
     }
-    else if (answers.shape = 'Triangle') {
-        console.log('triangle', shape);
+    else if (answers.logoShape === 'Triangle') {
         shape = new Triangle();
+        // console.log('triangle', shape);
     }
     else {
         console.log('Invalid or unsupported shape! :(')
@@ -54,14 +54,11 @@ function writeToFile(fileName, answers) {
     shape.setTextColor(answers.textColor);
 
     const svg = shape.render();
-    const filePath = `./examples`;
-    // const fileName = ''
 
-    console.log('svg string', svg);
+    // console.log('svg string', svg);
 
 // Writes returned svg tag to file and logs ensuing result
-    // fs.writeFile(fileName, JSON.stringify(shape), (err) =>
-    fs.writeFile(filePath, svg, (err) =>
+    fs.writeFile(fileName, svg, (err) =>
     err ? console.log(err) : console.log('Successfully created gen-logo.svg!')
     );
 
@@ -72,7 +69,7 @@ function init() {
     inquirer
         .prompt (questions)
         .then ((answers) => {
-            console.log('init', answers);
+            // console.log('init', answers);
             writeToFile('gen-logo.svg', answers);
         });
 };
