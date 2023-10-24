@@ -40,14 +40,13 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 1. UTA Bootcamp curriculum, instructor examples and student solved examples
 2. Andres Miro - helped with class creation and property assignment
 3. Basic SVG shape components and theory - <a href='https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes'>mdn web docs</a>
-
-
+4. SVG display in HTML/CSS - <a href='https://www.freecodecamp.org/news/use-svg-images-in-css-html/#:~:text=SVG%20images%20can%20be%20written,element%20in%20your%20HTML%20document.&text=body%3E-,If%20you%20did%20everything%20correctly%2C%20your%20webpage%20should,exactly%20like%20the%20demo%20below.'>freeCodeCamp()</a>
 
 ## <a href="https://github.com/bmancuso3/logo-generator">GitHub Repository</a>
 
 ## <a href="https://bmancuso3.github.io/logo-generator">Live Site - Not Applicable</a>
 
-## <a href="need link">Video Walk-Through</a>
+## <a href="https://drive.google.com/file/d/1i4w-h0pWKxindg4VEiuMEb8uMyrDsiaH/view">Video Walk-Through</a>
 
 ## Logo Examples
 
