@@ -1,3 +1,4 @@
+// Importing necessary files
 const inquirer = require('inquirer');
 const fs = require('fs');
 const {Circle, Square, Triangle} = require('./lib/shapes');
@@ -27,7 +28,7 @@ const questions = [
     },
 ];
 
-// Function to import generateMarkdown and run answers through it
+// Function to take user answers and distribute it to selected logo components
 function writeToFile(fileName, answers) {
     // console.log('writetofile', answers);
 
@@ -54,7 +55,6 @@ function writeToFile(fileName, answers) {
     shape.setTextColor(answers.textColor);
 
     const svg = shape.render();
-
     // console.log('svg string', svg);
 
 // Writes returned svg tag to file and logs ensuing result

@@ -39,12 +39,23 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ## References
 1. UTA Bootcamp curriculum, instructor examples and student solved examples
 2. Andres Miro - helped with class creation and property assignment
-2. Basic SVG shape components and theory - <a href='https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes'>mdn web docs</a>
-3. <a href='https://en.wikipedia.org/wiki/MIT_License'>MIT License</a>
+3. Basic SVG shape components and theory - <a href='https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Basic_Shapes'>mdn web docs</a>
+
 
 
 ## <a href="https://github.com/bmancuso3/logo-generator">GitHub Repository</a>
 
 ## <a href="https://bmancuso3.github.io/logo-generator">Live Site - Not Applicable</a>
 
-## <a href="https://bmancuso3.github.io/logo-generator">Video Walk-Through</a>
+## <a href="need link">Video Walk-Through</a>
+
+## Logo Examples
+
+### EX1
+<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><circle cx="150" cy="100" r="80" fill="red" /><text x="150" y="125" font-size="60" text-anchor="middle" fill="white">RPM</text></svg>
+
+### EX2
+<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><rect x="20" y="20" width="200" height="200" fill="black" /><text x="125" y="125" font-size="60" text-anchor="middle" fill="red">lol</text></svg>
+
+### EX3
+<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg"><polygon points="150,20 280,180 20,180" fill="blue" /><text x="150" y="150" font-size="60" text-anchor="middle" fill="white">RED</text></svg>
